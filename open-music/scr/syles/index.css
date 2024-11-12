@@ -33,6 +33,13 @@ body{
     background-color: var(--gray-8);
     margin: auto;
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
 .header__h1-L {
     font-family: var(--font-Family);
     font-size: var(--font-size-1);
