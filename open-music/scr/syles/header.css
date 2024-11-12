@@ -1,0 +1,10 @@
+header {
+    width: 100%;
+    height: fit-content;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-bottom: 3px solid var(--brand-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

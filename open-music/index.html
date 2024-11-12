@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
+    <link rel="stylesheet" href="./scr/syles/globalStyles.css">
+    <script type="module" src="./scr/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+       <h1 class="header__h1-L"><span class="span-L">o</span>pen <span class="span-L">m</span>usic</h1>
+       <button class="header__change-L"></button>
+       <!-- não consegui colocar a imagem com a estruturação pedida, logo coloquei a imagem no html -->
+       <style>
+        .header__change-L {
+          background-image: url(./scr/assets/icons/moon-icon.svg);
+          padding: 10px;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+       </style>
+       
+    </header>
+
+    <main>
+      <section>
+         <h2 class="genres h2-L">Gênero Musical</h2>
+         <div>
+          <div><p class="genres__names-L">Todos</p></div>
+          <div><p class="genres__names-L">Pop</p></div>
+          <div><p class="genres__names-L">MPB</p></div>
+          <div><p class="genres__names-L">Forró</p></div>
+          <div><p class="genres__names-L">Samba</p></div>
+          <div><p class="genres__names-L">Baião</p></div>
+          <div><p class="genres__names-L">Rap</p></div>
+          <div><p class="genres__names-L">Hip-Hop</p></div>
+         </div>
+      </section>
+
+      <section>
+         <div>
+           <h2 class="price h2-L">Definir Preço</h2>
+           <h2 class="price h2-L">Até <span class="span-L">R$ 100</span></h2>
+         </div>
+         <form>
+           <input type="range">
+         </form>
+      </section>
+
+      <section>
+         <h2 class="albums h2-L">Albuns Encontrados</h2>
+         <div>
+          <div>
+            <img src="./scr/assets/img/cover-1.jpg" alt="album-chorare">
+            <h3 class="albums h3-L">Acabou o Chorare</h3>
+            <div>
+              <p class="album__names-L">Novos Baianos</p>
+              <p class="album__types-L">MPB</p>
+            </div>
+            <div>
+              <p class="album__p-L">R$ 137,91</p>
+              <button class="album__button-L">Comprar</button>
+            </div>
+          </div>
+          <div>
+            <img src="./scr/assets/img/cover-2.jpg" alt="album-theWall">
+            <h3 class="albums h3-L">The Wall</h3>
+            <div>
+              <p class="album__names-L">Pink Floyd</p>
+              <p class="album__types-L">Rock</p>
+            </div>
+            <div>
+              <p class="album__p-L">R$ 123,56</p>
+              <button class="album__button-L">Comprar</button>
+            </div>
+          </div>
+          <div>
+            <img src="./scr/assets/img/cover-3.jpg" alt="album-PimpButterfly">
+            <h3 class="albums h3-L">To Pimp a Butterfly</h3>
+            <div>
+              <p class="album__names-L">Kendrick Lamar</p>
+              <p class="album__types-L">Rap</p>
+            </div>
+            <div>
+              <p class="album__p-L">R$ 102,66</p>
+              <button class="album__button-L">Comprar</button>
+            </div>
+          </div>
+          <div>
+            <img src="./scr/assets/img/cover-2.jpg" alt="album-theWall">
+            <h3 class="albums h3-L">The Wall</h3>
+            <div>
+              <p class="album__names-L">Pink Floyd</p>
+              <p class="album__types-L">Rock</p>
+            </div>
+            <div>
+              <p class="album__p-L">R$ 123,56</p>
+              <button class="album__button-L">Comprar</button>
+            </div>
+          </div>
+          <div>
+            <img src="./scr/assets/img/cover-1.jpg" alt="album-chorare">
+            <h3 class="albums h3-L">Acabou o Chorare</h3>
+            <div>
+              <p class="album__names-L">Novos Baianos</p>
+              <p class="album__types-L">MPB</p>
+            </div>
+            <div>
+              <p class="album__p-L">R$ 137,91</p>
+              <button class="album__button-L">Comprar</button>
+            </div>
+          </div>
+          <div>
+            <img src="./scr/assets/img/cover-3.jpg" alt="album-PimpButterfly">
+            <h3 class="albums h3-L">To Pimp a Butterfly</h3>
+            <div>
+              <p class="album__names-L">Kendrick Lamar</p>
+              <p class="album__types-L">Rap</p>
+            </div>
+            <div>
+              <p class="album__p-L">R$ 102,66</p>
+              <button class="album__button-L">Comprar</button>
+            </div>
+          </div>
+         </div>
+      </section>
+    </main>
+  </body>
+</html>

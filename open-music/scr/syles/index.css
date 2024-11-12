@@ -1,0 +1,97 @@
+/* style codes */
+:root {
+    --brand-1: #6F00FF;
+    --brand-2: #8629FF;
+    --gray-1: #15171A;
+    --gray-2: #212529;
+    --gray-3: #2B2F33;
+    --gray-4: #CED4DA;
+    --gray-5: #DEE2E6;
+    --gray-6: #F1F3F5;
+    --gray-7: #F8F9FA;
+    --gray-8: #FDFEFF;
+    --font-Family: "Inter", sans-serif;
+    --font-weight-1: 600;
+    --font-weight-2: 500;
+    --font-weight-3: 400;
+    --line-height-1: 30px;
+    --line-height-2: 26px;
+    --line-height-3: 20px;
+    --line-height-3: 24px;
+    --font-size-1: 40px;
+    --font-size-2: 24px;
+    --font-size-3: 22px;
+    --font-size-4: 20px;
+    --font-size-5: 16px;
+}
+body{
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--gray-8);
+    margin: auto;
+}
+.header__h1-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+    font-weight: var(--font-weight-1);
+    color: var(--gray-2);
+}
+.span-L {
+    color: var(--brand-1);
+}
+.header__change-L{
+    border: none;
+    background-color: var(--gray-6);
+}
+
+.h2-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-1);
+    font-weight: var(--font-weight-1);
+    color: var(--gray-2);
+}
+.genres__names-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-3);
+    font-weight: var(--font-weight-2);
+    color: var(--gray-3);
+}
+.h3-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+    color: var(--gray-2);
+}
+.album__names-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+    color: var(--gray-3);
+}
+.album__types-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+    color: var(--gray-3);
+}
+.album__p-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-4);
+    color: var(--gray-2);
+}
+.album__button-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-2);
+}
