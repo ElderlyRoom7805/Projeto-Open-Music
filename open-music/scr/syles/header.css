@@ -8,3 +8,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.header__change-L {
+    background-image: url("/open-music/scr/assets/icons/moon-icon.svg");
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

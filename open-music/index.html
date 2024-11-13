@@ -12,16 +12,6 @@
     <header>
        <h1 class="header__h1-L"><span class="span-L">o</span>pen <span class="span-L">m</span>usic</h1>
        <button class="header__change-L"></button>
-       <!-- não consegui colocar a imagem com a estruturação pedida, logo coloquei a imagem no html -->
-       <style>
-        .header__change-L {
-          background-image: url(./scr/assets/icons/moon-icon.svg);
-          padding: 10px;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-       </style>
-       
     </header>
 
     <main>
@@ -45,7 +35,7 @@
            <h2 class="price h2-L">Até <span class="span-L">R$ 100</span></h2>
          </div>
          <form class="filter__form">
-           <input type="range" class="filter__input">
+           <input type="range" class="filter__input" min="0" max="150" value="150" />
          </form>
       </section>
 
