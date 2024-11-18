@@ -126,7 +126,8 @@ function createFilterListByPrice(list) {
 }
 inputRange.addEventListener("input", (e) => {
     inputValue.innerText = inputRange.value;
-    createFilterListByPrice(albumList)
+    createFilterListByPrice(albumList);
+    verificaCorDeCriacao();
 })
 
 function verificaCorDeCriacao() {
