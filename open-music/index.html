@@ -8,41 +8,44 @@
     <link rel="stylesheet" href="./scr/syles/globalStyles.css">
     <script type="module" src="./scr/scripts/index.js" defer></script>
   </head>
-  <body>
-    <header>
+  <body class="body-L">
+    <header class="head-L">
        <h1 class="header__h1-L"><span class="span-L">o</span>pen <span class="span-L">m</span>usic</h1>
-       <button class="header__change-L"></button>
+       <button class="header__change L"></button>
     </header>
 
     <main>
       <section class="main__genres">
          <h2 class="genres h2-L">Gênero Musical</h2>
          <div class="genres__div">
-          <button type="menu" class="div__names-L">Todos</button>
-          <button type="menu" class="div__names-L">Pop</button>
-          <button type="menu" class="div__names-L">MPB</button>
-          <button type="menu" class="div__names-L">Forró</button>
-          <button type="menu" class="div__names-L">Samba</button>
-          <button type="menu" class="div__names-L">Baião</button>
-          <button type="menu" class="div__names-L">Rap</button>
-          <button type="menu" class="div__names-L">Hip-Hop</button>
+          <button class="div__names-L" id="todos">Todos</button>
+          <button class="div__names-L" id="pop">Pop</button>
+          <button class="div__names-L" id="mpb">MPB</button>
+          <button class="div__names-L" id="forro">Forró</button>
+          <button class="div__names-L" id="samba">Samba</button>
+          <button class="div__names-L" id="baiao">Baião</button>
+          <button class="div__names-L" id="rap">Rap</button>
+          <button class="div__names-L" id="hiphop">Hip-Hop</button>
          </div>
       </section>
 
       <section class="main__filter">
          <div class="filter__div">
            <h2 class="filter h2-L">Definir Preço</h2>
-           <h2 class="price h2-L">Até <span class="span-L">R$ 100</span></h2>
+           <h2 class="price h2-L">Até
+            <span class="span-L">R$</span>
+            <span class="span-L" id="input-value"> 100</span>
+          </h2>
          </div>
          <form class="filter__form">
-           <input type="range" class="filter__input" min="0" max="150" value="150" />
+           <input type="range" class="filter__input" id="input-range" min="0" max="150" value="150" />
          </form>
       </section>
 
       <section class="main__album">
          <h2 class="albums h2-L">Albuns Encontrados</h2>
-         <div class="album__div">
-          <div class="album__item">
+         <ul class="album__div">
+          <li class="album__item">
             <img src="./scr/assets/img/cover-1.jpg" alt="album-chorare">
             <h3 class="albums__titles h3-L">Acabou o Chorare</h3>
             <div class="albums__description">
@@ -53,8 +56,8 @@
               <p class="album__p-L">R$ 137,91</p>
               <button class="album__button-L">Comprar</button>
             </div>
-          </div>
-          <div class="album__item">
+          </li>
+          <li class="album__item">
             <img src="./scr/assets/img/cover-2.jpg" alt="album-theWall">
             <h3 class="albums__titles h3-L">The Wall</h3>
             <div class="albums__description">
@@ -65,8 +68,8 @@
               <p class="album__p-L">R$ 123,56</p>
               <button class="album__button-L">Comprar</button>
             </div>
-          </div>
-          <div class="album__item">
+          </li>
+          <li class="album__item">
             <img src="./scr/assets/img/cover-3.jpg" alt="album-PimpButterfly">
             <h3 class="albums__titles h3-L">To Pimp a Butterfly</h3>
             <div class="albums__description">
@@ -77,8 +80,8 @@
               <p class="album__p-L">R$ 102,66</p>
               <button class="album__button-L">Comprar</button>
             </div>
-          </div>
-          <div class="album__item">
+          </li>
+          <li class="album__item">
             <img src="./scr/assets/img/cover-2.jpg" alt="album-theWall">
             <h3 class="albums__titles h3-L">The Wall</h3>
             <div class="albums__description">
@@ -89,8 +92,8 @@
               <p class="album__p-L">R$ 123,56</p>
               <button class="album__button-L">Comprar</button>
             </div>
-          </div>
-          <div class="album__item">
+          </li>
+          <li class="album__item">
             <img src="./scr/assets/img/cover-1.jpg" alt="album-chorare">
             <h3 class="albums__titles h3-L">Acabou o Chorare</h3>
             <div class="albums__description">
@@ -101,8 +104,8 @@
               <p class="album__p-L">R$ 137,91</p>
               <button class="album__button-L">Comprar</button>
             </div>
-          </div>
-          <div class="album__item">
+          </li>
+          <li class="album__item">
             <img src="./scr/assets/img/cover-3.jpg" alt="album-PimpButterfly">
             <h3 class="albums__titles h3-L">To Pimp a Butterfly</h3>
             <div class="albums__description">
@@ -113,8 +116,8 @@
               <p class="album__p-L">R$ 102,66</p>
               <button class="album__button-L">Comprar</button>
             </div>
-          </div>
-         </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

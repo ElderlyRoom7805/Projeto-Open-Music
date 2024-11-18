@@ -24,13 +24,22 @@
     --font-size-4: 20px;
     --font-size-5: 16px;
 }
-body{
+.body-L{
     max-width: 1024px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--gray-8);
+    margin: auto;
+}
+.body-D{
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--gray-1);
     margin: auto;
 }
 main {
@@ -40,28 +49,7 @@ main {
     width: 100%;
     flex-direction: column;
 }
-.header__h1-L {
-    font-family: var(--font-Family);
-    font-size: var(--font-size-1);
-    line-height: var(--line-height-1);
-    font-weight: var(--font-weight-1);
-    color: var(--gray-2);
-}
-.span-L {
-    color: var(--brand-1);
-}
-.header__change-L{
-    border: none;
-    background-color: var(--gray-6);
-}
 
-.h2-L {
-    font-family: var(--font-Family);
-    font-size: var(--font-size-2);
-    line-height: var(--line-height-1);
-    font-weight: var(--font-weight-1);
-    color: var(--gray-2);
-}
 .genres__names-L {
     font-family: var(--font-Family);
     font-size: var(--font-size-5);
@@ -69,36 +57,4 @@ main {
     font-weight: var(--font-weight-2);
     color: var(--gray-3);
 }
-.h3-L {
-    font-family: var(--font-Family);
-    font-size: var(--font-size-3);
-    font-weight: var(--font-weight-1);
-    line-height: var(--line-height-2);
-    color: var(--gray-2);
-}
-.album__names-L {
-    font-family: var(--font-Family);
-    font-size: var(--font-size-5);
-    font-weight: var(--font-weight-3);
-    line-height: var(--line-height-3);
-    color: var(--gray-3);
-}
-.album__types-L {
-    font-family: var(--font-Family);
-    font-size: var(--font-size-5);
-    font-weight: var(--font-weight-3);
-    line-height: var(--line-height-3);
-    color: var(--gray-3);
-}
-.album__p-L {
-    font-family: var(--font-Family);
-    font-size: var(--font-size-4);
-    font-weight: var(--font-weight-1);
-    line-height: var(--line-height-4);
-    color: var(--gray-2);
-}
-.album__button-L {
-    font-family: var(--font-Family);
-    font-size: var(--font-size-5);
-    font-weight: var(--font-weight-2);
-}
+

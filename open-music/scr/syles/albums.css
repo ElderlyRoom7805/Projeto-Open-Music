@@ -16,6 +16,19 @@
 }
 .album__item {
     background-color: var(--gray-7);
+    border-radius: 4px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    flex-grow: 1;
+}
+.album__item-D {
+    background-color: var(--gray-2);
+    border-radius: 4px;
     margin-bottom: 32px;
     display: flex;
     flex-direction: column;
@@ -40,10 +53,83 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+.h3-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+    color: var(--gray-2);
+}
+
+.h3-D {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+    color: var(--gray-7);
+}
+.album__names-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+    color: var(--gray-3);
+}
+.album__names-D {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+    color: var(--gray-6);
+}
+
+.album__types-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+    color: var(--gray-3);
+}
+.album__types-D {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+    color: var(--gray-6);
+}
+
+.album__p-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-4);
+    color: var(--gray-2);
+}
+.album__p-D {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-4);
+    color: var(--gray-7);
+}
 .album__button-L {
     padding: 10px 10px 10px 10px;
     background-color: var(--brand-2);
     color: var(--gray-8);
     border: 1px solid var(--gray-8);
     border-radius: 4px;
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-2);
+}
+.album__button-D {
+    padding: 10px 10px 10px 10px;
+    background-color: var(--brand-1);
+    color: var(--gray-8);
+    border: 1px solid var(--brand-1);
+    border-radius: 4px;
+    font-family: var(--font-Family);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-2);
 }

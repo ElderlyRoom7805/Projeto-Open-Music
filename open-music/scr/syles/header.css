@@ -1,4 +1,4 @@
-header {
+.head-L {
     width: 100%;
     height: fit-content;
     padding-top: 48px;
@@ -8,9 +8,49 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.header__change-L {
+.head-D {
+    width: 100%;
+    height: fit-content;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-bottom: 3px solid var(--brand-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__h1-L {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+    font-weight: var(--font-weight-1);
+    color: var(--gray-2);
+}
+.header__h1-D {
+    font-family: var(--font-Family);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+    font-weight: var(--font-weight-1);
+    color: var(--gray-7);
+}
+.span-L {
+    color: var(--brand-1);
+}
+.span-D {
+    color: var(--brand-2);
+}
+.L {
     background-image: url("/open-music/scr/assets/icons/moon-icon.svg");
     padding: 10px;
     background-position: center;
     background-repeat: no-repeat;
-  }
+    border: none;
+    background-color: var(--gray-6);
+}
+.D {
+    background-image: url("/open-music/scr/assets/icons/sun-icon.svg");
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: var(--gray-3);
+}
