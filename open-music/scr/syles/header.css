@@ -39,7 +39,7 @@
     color: var(--brand-2);
 }
 .L {
-    background-image: url("/open-music/scr/assets/icons/moon-icon.svg");
+    background-image: url("open-music/scr/assets/icons/moon-icon.svg");
     padding: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
     background-color: var(--gray-6);
 }
 .D {
-    background-image: url("/open-music/scr/assets/icons/sun-icon.svg");
+    background-image: url("open-music/scr/assets/icons/sun-icon.svg");
     padding: 10px;
     background-position: center;
     background-repeat: no-repeat;
