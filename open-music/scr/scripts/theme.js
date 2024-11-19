@@ -51,7 +51,7 @@ export function darkOrLightMode(){
         for(let i= 0; i<buttonAlbum.length; i++){
             buttonAlbum[i].classList.toggle("album__button-D");
         }
-    }
+    };
     let darkMode = false;
 
     function localStorageChanged() {
@@ -59,12 +59,12 @@ export function darkOrLightMode(){
         if(darkMode){
             return themeChange();
         }
-    }
+    };
 
     buttonChange.addEventListener("click", function(e){
         darkMode = !darkMode;
         localStorage.setItem("@openMusic:theme", JSON.stringify(darkMode));
         themeChange();
-    })
-    localStorageChanged()
+    });
+    localStorageChanged();
 }

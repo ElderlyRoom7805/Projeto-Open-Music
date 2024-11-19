@@ -1,7 +1,8 @@
+import { albumAPI } from "./api.js";
 import { applyInputRangeStyle } from "./inputRange.js";
 import { albumList } from "./albumsDatabase.js";
 import { darkOrLightMode } from "./theme.js";
-applyInputRangeStyle()
+applyInputRangeStyle();
 const albumDiv = document.querySelector(".album__div");
 function removeLi() {
     let li = document.getElementsByClassName("album__item");
@@ -9,9 +10,10 @@ function removeLi() {
     for(let i=0; i<liLength; i++){
         albumDiv.removeChild(li[0]);
     }
-} 
+};
 removeLi()
 function createCard(lista){
+    console.log(lista)
     for(let i=0; i<lista.length; i++){
         const liJs = document.createElement("li");
         const imgJs = document.createElement("img");
@@ -51,11 +53,9 @@ function createCard(lista){
         liJs.appendChild(divJsD);
         liJs.appendChild(divjsD2);
         
-        albumDiv.appendChild(liJs)
-    }
-}
-
-createCard(albumList);
+        albumDiv.appendChild(liJs);
+    };
+};
 
 const buttonAll = document.querySelector("#todos");
 const buttonPop = document.querySelector("#pop");
@@ -66,73 +66,33 @@ const buttonBaiao = document.querySelector("#baiao");
 const buttonRap = document.querySelector("#rap");
 const buttonHipHop = document.querySelector("#hiphop");
 function createFilterListbyGenres(list, valorInput) {
-    removeLi()
+    removeLi();
     const valorMinuscula = valorInput.toLowerCase();
     const filterList = list.filter((element, index) => {
         const elementMenor = element.genre.toLowerCase();
         const input = elementMenor.includes(valorMinuscula);
-        console.log(input)
-        return input
-    })
-    createCard(filterList)
+        return input;
+    });
+    createCard(filterList);
 }
-buttonPop.addEventListener("click", function (e) {
-    createFilterListbyGenres(albumList, "pop");
-    verificaCorDeCriacao()
-})
-buttonMPB.addEventListener("click", function (e) {
-    createFilterListbyGenres(albumList, "MPB")
-    verificaCorDeCriacao()
-})
-buttonForro.addEventListener("click", function (e) {
-    createFilterListbyGenres(albumList, "Forro")
-    verificaCorDeCriacao()
-})
-buttonSamba.addEventListener("click", function (e) {
-    createFilterListbyGenres(albumList, "Samba")
-    verificaCorDeCriacao()
-})
-buttonBaiao.addEventListener("click", function (e) {
-    createFilterListbyGenres(albumList, "Baiao")
-    verificaCorDeCriacao()
-})
-buttonRap.addEventListener("click", function (e) {
-    createFilterListbyGenres(albumList, "Rap")
-    verificaCorDeCriacao()
-})
-buttonHipHop.addEventListener("click", function (e) {
-    createFilterListbyGenres(albumList, "Hip-Hop")
-    verificaCorDeCriacao()
-})
-buttonAll.addEventListener("click", function (e) {
-    removeLi();
-    createCard(albumList);
-    verificaCorDeCriacao()
-})
 
 const inputRange = document.getElementById("input-range");
 let inputValue = document.getElementById("input-value");
 
 function createFilterListByPrice(list) {
-    removeLi()
+    removeLi();
     let inputValueNow = inputRange.value;
     const filterList = list.filter((element, index) => {
         let elementPrice = element.price;
         let elementFixed = parseInt(elementPrice);
-        return elementFixed <= inputValueNow
+        return elementFixed <= inputValueNow;
     })
     createCard(filterList);
     
 }
-inputRange.addEventListener("input", (e) => {
-    inputValue.innerText = inputRange.value;
-    createFilterListByPrice(albumList);
-    verificaCorDeCriacao();
-})
 
 function verificaCorDeCriacao() {
-    let darkVerificacao = JSON.parse(localStorage.getItem("@openMusic:theme"))
-    console.log(darkVerificacao)
+    let darkVerificacao = JSON.parse(localStorage.getItem("@openMusic:theme"));
     if (darkVerificacao) {
         const albumItem = document.querySelectorAll(".album__item");
         for(let i=0; i<albumItem.length; i++){
@@ -158,9 +118,51 @@ function verificaCorDeCriacao() {
         for(let i= 0; i<buttonAlbum.length; i++){
             buttonAlbum[i].classList.toggle("album__button-D");
         }
-        return console.log("precisou")
     } else {
-        return console.log("não precisou")
-    }
+        return console.error("problema na verificação");
+    };
+};
+async function APIAlbuns() {
+    const b = await albumAPI();
+    createCard(b);
+    buttonPop.addEventListener("click", function (e) {
+        createFilterListbyGenres(b, "pop");
+        verificaCorDeCriacao();
+    });
+    buttonMPB.addEventListener("click", function (e) {
+        createFilterListbyGenres(b, "MPB");
+        verificaCorDeCriacao();
+    });
+    buttonForro.addEventListener("click", function (e) {
+        createFilterListbyGenres(b, "Forro");
+        verificaCorDeCriacao();
+    });
+    buttonSamba.addEventListener("click", function (e) {
+        createFilterListbyGenres(b, "Samba");
+        verificaCorDeCriacao();
+    });
+    buttonBaiao.addEventListener("click", function (e) {
+        createFilterListbyGenres(b, "Baiao");
+        verificaCorDeCriacao();
+    });
+    buttonRap.addEventListener("click", function (e) {
+        createFilterListbyGenres(b, "Rap");
+        verificaCorDeCriacao();
+    });
+    buttonHipHop.addEventListener("click", function (e) {
+        createFilterListbyGenres(b, "Hip-Hop");
+        verificaCorDeCriacao();
+    });
+    buttonAll.addEventListener("click", function (e) {
+        removeLi();
+        createCard(b);
+        verificaCorDeCriacao();
+    });
+    inputRange.addEventListener("input", (e) => {
+        inputValue.innerText = inputRange.value;
+        createFilterListByPrice(b);
+        verificaCorDeCriacao();
+    });
+    darkOrLightMode();
 }
-darkOrLightMode()
+APIAlbuns();
